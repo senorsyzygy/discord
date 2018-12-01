@@ -1,0 +1,22 @@
+{
+  "name": "Tachanka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve-debug": "nodemon --inspect mybot.js",
+    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Node\" -c \"green.bold\" \"npm run serve-debug\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "node-opus": "^0.2.9"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.6"
+  }
+}
