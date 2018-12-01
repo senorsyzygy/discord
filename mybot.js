@@ -24,6 +24,7 @@ client.on("message", async (message) => {
     return; // not a bot command
   }
 
+  // Get he word after prefix, e.g. ">stop" will return "stop"
   const content = message.content.split(' ')[0].slice(prefix.length);
   const command = commandMap[content];
 

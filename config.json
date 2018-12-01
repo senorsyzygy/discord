@@ -1,5 +1,5 @@
 {
-  "prefix": ">>",
+  "prefix": ">",
   "images": "./images",
   "audios": "./audios",
   "audio": {
