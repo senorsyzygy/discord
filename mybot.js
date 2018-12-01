@@ -33,17 +33,20 @@ client.on("message", async (message) => {
     .then(() => {
       console.log(`Executed ${content} command`);
     }).catch(err => {
+      message.react('%E2%9D%8C').catch((er) => console.error("Failed to react", er));
       console.error(`Failed to successfully execute ${content}`, err);
     });
-
 });
+
+// Login to the bot
+login();
 
 function buildCommandMap(commands) {
   const result = {};
   for(let commandFile of commands) {
     // each command file has an array of commands
     for(let command of commandFile.commands) {
-      result[key] = command;
+      result[command.key] = command;
     }
   }
 

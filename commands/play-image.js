@@ -17,7 +17,8 @@ function genericImagePlayer(dir, help) {
     key: dir,
     handler: async (message) => {
       const files = utils.getAllFilesRecursive(utils.fromImageRoot(dir));
-      await message.channel.send({ files: [files.crandom()] })
+      const file = utils.fromImageRoot(dir, files.crandom());
+      await message.channel.send({ files: [file] })
     },
     help: help
   };

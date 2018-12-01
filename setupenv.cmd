@@ -1,1 +1,2 @@
-SET PATH=%~dp0bin;%PATH%
+@echo off
+@SET PATH=%~dp0bin;%PATH%

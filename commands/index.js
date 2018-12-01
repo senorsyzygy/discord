@@ -1,5 +1,5 @@
 const commands = ['./play-audio', './play-image'];
 
 module.exports = {
-  commands: [commands.map(require)]
+  commands: commands.map(require)
 };
