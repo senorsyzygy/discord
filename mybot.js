@@ -331,4 +331,4 @@ if(!vc) return;
 
 
  
-client.login("NTE2MDI4NjE3NTg3Njg3NDQz.Dtt1fw.HxaWMRb3_VHJFK_YICm-WSznIk4");
+client.login("");
