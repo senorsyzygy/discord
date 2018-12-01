@@ -1,0 +1,8 @@
+{
+  "prefix": ">>",
+  "images": "./images",
+  "audios": "./audios",
+  "audio": {
+    "disconnectTimeout": 3000
+  }
+}
